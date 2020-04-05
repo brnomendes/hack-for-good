@@ -46,6 +46,10 @@ class Course(Module):
             self._enqueue_generic(self._content["exit"])
             return
 
+        if content != "1":
+            self._enqueue_generic(self._content["continue"])
+            return
+
         current_session = current_session + 1
         if current_module == "module_1" and current_session >= len(
             self._content["module_1"]
@@ -62,6 +66,7 @@ class Course(Module):
         s = int(session[self._current_session_key])
         for content in self._content[m][s]:
             self._enqueue_generic(content)
+        self._enqueue_generic(self._content["continue"])
 
     def _welcome(self):
         for message in self._content["welcome"]:
