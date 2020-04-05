@@ -9,6 +9,11 @@
             "option": "2",
             "module": "modules.features.prevention.Prevention",
             "text": "Aprender a me prevenir contra o coronavírus."
+        },
+        {
+            "option": "5",
+            "module": "modules.features.anxiety.Anxiety",
+            "text": "Aliviar a minha ansiedade."
         }
     ],
     "modules": {
@@ -44,6 +49,21 @@
                 "- E, claro: Quarentene-se! Aproveite para aprender pela internet, para assistir filmes, relaxar, fazer exercícios físicos e pensar em novas maneiras de ganhar dinheiro assim que essa crise passar! Vamos juntos na luta contra o coronavírus!",
                 "Importante: não existe tratamento, vacina ou medicamento específico para tratar ou prevenir o coronavírus. As substâncias, mesmo as que estão sendo utilizadas em casos de vida ou morte, ainda estão em testes, não há certeza. Não 'pegue' para ver!",
                 "Além de tudo isso, o coronavírus é uma doença nova, de modo que não sabemos as sequelas que podem aparecer com o tempo para quem passou por essa terrível experiência. Vamos nos prevenir!"
+            ],
+            "exit": "_Para voltar ao início, digite 0._"
+        },
+        "Anxiety": {
+            "introduction": [
+                "Ansiedade pode ser causada por traumas, depressão e em situações intensas, de estresse, como a que estamos vivendo por causa da pandemia do coronavírus.",
+                "Suas características são: Preocupação em excesso e medo de situações do dia-a-dia. Fisicamente, você pode sentir uma taquicardia (o coração batendo muito forte), respiração rápida, suor, cansaço e dor de cabeça.",
+                "Por agora, para controlar a ansiedade podemos nos esforçar para controlar a respiração e tentar dedicar cinco minutos à não pensar em nada ou, ao menos, não prestar atenção no que está pensando. Esvaziar a cabeça ajuda, sabe?",
+                "Olha esse vídeo com uma técnica de respiração que a gente preparou com exclusividade para você:"
+            ],
+            "image": "breaths.gif",
+            "video": "breaths.mp4",
+            "contents": [
+                "Se precisar conversar com um profissional de saúde mental sobre sua ansiedade recomendamos o: relacoessimplificadas.com.br/escuta",
+                "Para ouvir histórias ou indicar amigos e familiares basta acessar a página do Histórias por Telefone e preencher o formulário: https://bit.ly/formulario-historias"
             ],
             "exit": "_Para voltar ao início, digite 0._"
         }
