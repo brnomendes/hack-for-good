@@ -23,10 +23,10 @@ LOGGER = logging.getLogger(NAME)
 def entry_point():
     if "From" in request.form and "Body" in request.form:
         LOGGER.info(f"NEW MESSAGE {request.form['From']}: {request.form['Body']}")
-        try:
-            handle_messages(request.form["From"], request.form["Body"].strip())
-        except Exception as e:
-            LOGGER.error(e)
+        # try:
+        handle_messages(request.form["From"], request.form["Body"].strip())
+        # except Exception as e:
+        #     LOGGER.error(e)
 
     return str(MessagingResponse())
 
