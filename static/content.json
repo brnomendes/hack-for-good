@@ -50,6 +50,16 @@
                 "Importante: não existe tratamento, vacina ou medicamento específico para tratar ou prevenir o coronavírus. As substâncias, mesmo as que estão sendo utilizadas em casos de vida ou morte, ainda estão em testes, não há certeza. Não 'pegue' para ver!",
                 "Além de tudo isso, o coronavírus é uma doença nova, de modo que não sabemos as sequelas que podem aparecer com o tempo para quem passou por essa terrível experiência. Vamos nos prevenir!"
             ],
+            "images": [
+                "1.jpeg",
+                "2.jpeg",
+                "3.jpeg",
+                "4.jpeg",
+                "5.jpeg",
+                "6.jpeg",
+                "7.jpeg",
+                "8.jpeg"
+            ],
             "exit": "_Para voltar ao início, digite 0._"
         },
         "Anxiety": {
