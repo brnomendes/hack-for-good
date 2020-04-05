@@ -2,25 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Quarentena-se</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Admin Quarentena-se</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"
-        integrity="sha256-Dul4c09cdrWKXVtallPxF558lwxMwCC8dXJdZ0PVW54=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
 
-    <script>
-        document.addEventListener("DOMContentLoaded", event => {
-            var socket = io.connect('http://' + document.domain + ':' + location.port);
-            socket.on('twilio', message => {
-                document.getElementById('log').innerHTML += `<p>${message.as_send ? 'To' : 'From'} <strong>${message.number}</strong>: ${message.content}</p>`;
-            });
-        });
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"
+    integrity="sha256-Dul4c09cdrWKXVtallPxF558lwxMwCC8dXJdZ0PVW54=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+    integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", event => {
+      var socket = io.connect('http://' + document.domain + ':' + location.port);
+      socket.on('twilio', message => {
+        let content = `<div class="item"><div class="content"><div class="header">${message.as_send ? 'Para' : 'De'} ${message.number}</div>${message.content}</div></div>`
+        document.getElementById('log').innerHTML += content;
+      });
+    });
+  </script>
+
+  <style>
+    .description {
+      font-size: medium;
+    }
+
+    .container {
+      padding: 5em 0em;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .log {
+      height: 500px;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+  </style>
 </head>
 
 <body>
-    <div id="log"></div>
+  <div class="ui container">
+    <div class="ui two column grid">
+      <div class="column description">
+        <p><strong>Bem-vindo ao ambiente de desenvolvimento do Quarentene-se!</strong></p>
+
+        <p>Este ambiente tem o objetivo de permitir o acompanhamento das mensagens enviadas e recebidas por todos os
+          participantes do
+          projeto.</p>
+
+        <p>O protótipo utiliza a plataforma Heroku para servir a aplicação e a ferramenta Whastapp Sandbox da Twilio
+          para a comunicação. Como o ambiente ainda é de desenvolvimento e testes, erros e comportamentos estranhos são
+          esperados.</p>
+
+        <p><strong>Como testar:</strong></p>
+
+        <p>O Whastapp Sandbox da Twilio oferece um número compartilhado para testes e desenvolvimento. O número utilizo
+          para este projeto é: <strong>+14155238886</strong></p>
+        <p>Para iniciar uma conversa é preciso enviar <strong>join independent-fresh</strong> para o
+          número mencionado, assim o Sandbox encaminhara todas as mensagens para este sistema.</p>
+      </div>
+
+      <div class="column">
+
+        <div class="ui inverted segment log">
+          <div class="ui inverted relaxed divided list" id="log">
+
+            <div class="item">
+              <div class="content">
+                <div class="header">Snickerdoodle</div>
+                An excellent companion
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </body>
 
