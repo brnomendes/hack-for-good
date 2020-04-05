@@ -80,9 +80,7 @@ class Course(Module):
         self._enqueue_generic(self._content["menu"])
 
     def _enqueue_generic(self, content):
-        if content.split(".")[-1] not in ["mp3", "jpg", "jpeg"]:
-            self._enqueue_response_media(content)
+        if content.split(".")[-1] in ["mp3", "jpg", "jpeg"]:
+            self._enqueue_response_media(self._get_static_file(content, self.NAME))
         else:
-            self._enqueue_response(
-                self._get_static_file(content, self.NAME)
-            )
+            self._enqueue_response(content)
