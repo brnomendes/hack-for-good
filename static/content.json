@@ -4,6 +4,11 @@
             "option": "1",
             "module": "modules.features.symptoms.Symptoms",
             "text": "Saber os sintomas do coronavírus."
+        },
+        {
+            "option": "2",
+            "module": "modules.features.prevention.Prevention",
+            "text": "Saber os sintomas do coronavírus."
         }
     ],
     "modules": {
@@ -24,6 +29,21 @@
             "contents": [
                 "No início da doença, é possível estar com o coronavírus sem sentir nenhum sintoma, mas ainda assim, estar transmitindo sem saber! Inclusive transmitindo a doença para pessoas vulneráveis como idosos, diabéticos, pessoas com problemas respiratórios e de coração. Pessoas nessas condições tem grandes riscos de ir à óbito. Proteja a si mesmo e aos que você ama: previna-se! Quarentene-se!",
                 "Se você, ou alguém próximo, apresentar sintomas leves, fique em casa! Mantenha o corpo aquecido, beba bastante água, use umidificador de ar e banho quente para a tosse. Se tiver febre ou dificuldade para respirar se dirija para o hospital mais próximo. Força! Vai dar tudo certo!"
+            ],
+            "exit": "_Para voltar ao início, digite 0._"
+        },
+        "Prevention": {
+            "contents": [
+                "- Lave suas mãos (sabão com água ou álcool em gel podem matar o vírus).",
+                "Para saber mais: Vídeo com o Dr. Dráuzio Varella 'Como lavar as mãos corretamente'. https://www.youtube.com/watch?v=rsQlyIwetsE",
+                "- Se for tossir ou espirrar, cubra a boca com um lenço de papel ou o cotovelo para evitar que o vírus se propague. E, claro: lave as mãos depois!",
+                "Que tal usar uma máscara toda vez que for sair? Reduz muito a chance de você pegar ou transmitir coronavírus! Você pode fazer sua própria máscara em casa.",
+                "https://www1.folha.uol.com.br/equilibrioesaude/2020/04/veja-como-fazer-sua-propria-mascara-de-pano-para-se-proteger-do-coronavirus.shtml",
+                "- Se você tocar em uma superfície contaminada pelo vírus, você pode adoecer! Então não passe a mão nos olhos, nariz e boca.",
+                "- Não fique próximo à pessoas que estiverem tossindo, espirrando ou febris.",
+                "- E, claro: Quarentene-se! Aproveite para aprender pela internet, para assistir filmes, relaxar, fazer exercícios físicos e pensar em novas maneiras de ganhar dinheiro assim que essa crise passar! Vamos juntos na luta contra o coronavírus!",
+                "Importante: não existe tratamento, vacina ou medicamento específico para tratar ou prevenir o coronavírus. As substâncias, mesmo as que estão sendo utilizadas em casos de vida ou morte, ainda estão em testes, não há certeza. Não 'pegue' para ver!",
+                "Além de tudo isso, o coronavírus é uma doença nova, de modo que não sabemos as sequelas que podem aparecer com o tempo para quem passou por essa terrível experiência. Vamos nos prevenir!"
             ],
             "exit": "_Para voltar ao início, digite 0._"
         }
