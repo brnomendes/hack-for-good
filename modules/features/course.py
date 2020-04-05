@@ -41,7 +41,7 @@ class Course(Module):
 
         current_session = int(session.get(self._current_session_key))
         if current_module == "module_2" and current_session >= len(
-            self._content("module_2")
+            self._content["module_2"]
         ):
             self._enqueue_generic(self._content["exit"])
             return
