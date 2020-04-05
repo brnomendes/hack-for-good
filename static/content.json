@@ -16,6 +16,11 @@
             "text": "Saber as últimas notícias sobre o coronavírus."
         },
         {
+            "option": "4",
+            "module": "modules.features.fakenews.Fakenews",
+            "text": "Ficar ligado nas notícias falsas (fake news)!"
+        },
+        {
             "option": "5",
             "module": "modules.features.anxiety.Anxiety",
             "text": "Aliviar a minha ansiedade."
@@ -155,6 +160,15 @@
                 "http://rss.home.uol.com.br/index.xml"
             ],
             "not_found": "Não foram encontradas notícias sobre o coronavírus.",
+            "exit": "_Para voltar ao início, digite 0._"
+        },
+        "Fakenews": {
+            "feeds": [
+                "https://www.e-farsas.com/feed",
+                "https://aosfatos.org/noticias/feed/",
+                "https://www.boatos.org/feed"
+            ],
+            "not_found": "Não foram encontradas notícias falsas sobre o coronavírus.",
             "exit": "_Para voltar ao início, digite 0._"
         }
     }
