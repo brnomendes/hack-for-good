@@ -30,16 +30,13 @@
   </script>
 
   <style>
-    .description {
-      font-size: medium;
-    }
-
     .container {
       padding: 5em 0em;
     }
 
     p {
       text-align: justify;
+      font-size: medium;
     }
 
     .log {
@@ -53,7 +50,7 @@
 <body>
   <div class="ui container">
     <div class="ui stackable two column grid">
-      <div class="column description">
+      <div class="column">
         <p><strong>Bem-vindo ao ambiente de desenvolvimento do Quarentene-se!</strong></p>
 
         <p>Este ambiente tem o objetivo de permitir o acompanhamento das mensagens enviadas e recebidas por todos os
@@ -66,7 +63,8 @@
 
         <p><strong>Como testar:</strong></p>
 
-        <p>O Whastapp Sandbox da Twilio oferece um número compartilhado para testes e desenvolvimento. O número utilizado
+        <p>O Whastapp Sandbox da Twilio oferece um número compartilhado para testes e desenvolvimento. O número
+          utilizado
           para este projeto é: <strong>+14155238886</strong></p>
         <p>Para iniciar uma conversa é preciso enviar <strong>join independent-fresh</strong> para o
           número mencionado, assim o Sandbox encaminhara todas as mensagens para este sistema.</p>
@@ -78,6 +76,34 @@
           <div class="ui inverted relaxed divided list" id="log"></div>
         </div>
 
+      </div>
+    </div>
+    <div class="ui stackable one column grid">
+      <div class="column description">
+        <p><strong>Sobre a implementação do protótipo:</strong></p>
+        <p>Código disponível em https://github.com/brnomendes/hack-for-good</p>
+        <p>
+          As principais ferramentas para o Quarentene-se são a linguagem Python, o microframework Flask, API para
+          Whatsapp da Twilio e o banco de dados Redis.
+        </p>
+
+        <p>Dependências do backend:</p>
+        <ul class="ui list">
+          <div class="item">Flask==1.1.2</div>
+          <div class="item">Flask-SocketIO==4.2.1</div>
+          <div class="item">redis==3.4.1</div>
+          <div class="item">requests==2.23.0</div>
+          <div class="item">twilio==6.38.0</div>
+          <div class="item">feedparser==5.2.1</div>
+        </ul>
+        <p>Dependências para deploy:</p>
+        <ul class="ui list">
+          <div class="item">eventlet==0.25.1</div>
+          <div class="item">gunicorn==20.0.4</div>
+        </ul>
+
+        <p>Arquitetura:</p>
+        <img class="ui centered image" src="/static/arquitetura.png">
       </div>
     </div>
   </div>
