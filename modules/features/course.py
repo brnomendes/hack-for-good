@@ -83,4 +83,6 @@ class Course(Module):
         if content.split(".")[-1] in ["mp3", "jpg", "jpeg"]:
             self._enqueue_response_media(content)
         else:
-            self._enqueue_response(content)
+            self._enqueue_response(
+                self._get_static_file(self._content[content], self.NAME)
+            )
