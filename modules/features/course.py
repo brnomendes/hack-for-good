@@ -37,7 +37,7 @@ class Course(Module):
                 session[self._current_module_key] = "module_2"
 
             self._enqueue_session(
-                session[self._current_module_key], session[self._current_module_key]
+                session[self._current_module_key], session[self._current_session_key]
             )
             return
 
@@ -58,7 +58,7 @@ class Course(Module):
         session[self._current_session_key] = current_session
         session[self._current_module_key] = current_module
         self._enqueue_session(
-            session[self._current_module_key], session[self._current_module_key]
+            session[self._current_module_key], session[self._current_session_key]
         )
 
     def _enqueue_session(self, module, session):
