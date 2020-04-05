@@ -11,6 +11,12 @@ class Course(Module):
         self._current_module_key = f"{self.NAME}-module"
         self._current_session_key = f"{self.NAME}-session"
 
+    def clear(self):
+        if self._current_module_key in session:
+            session.pop(self._current_module_key)
+        if self._current_session_key in session:
+            session.pop(self._current_session_key)
+
     def handle(self, content):
         Module.handle(self, content)
 

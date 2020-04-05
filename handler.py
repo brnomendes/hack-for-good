@@ -1,5 +1,6 @@
 from pydoc import locate
 from flask import session
+from modules.features.course import Course
 from modules.module import Module
 from modules.command import Command
 from modules.welcome import Welcome
@@ -27,6 +28,8 @@ def handle_messages(number, content):
             run_module(sender, MENU, option, number, content)
             return
 
+        course = Course(sender, number)
+        course.clear()
         session.pop(menu_cookie_key)
 
     # The user wasn't in any feature.
