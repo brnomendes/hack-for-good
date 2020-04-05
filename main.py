@@ -11,15 +11,15 @@ from flask_socketio import SocketIO
 
 NAME = "QUARENTENA-SE"
 
-APP = Flask(__name__)
-APP.config["SECRET_KEY"] = os.getenv("SECRET_KEY", uuid.uuid4().hex)
-SOCKETIO = SocketIO(APP)
+app = Flask(__name__)
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", uuid.uuid4().hex)
+SOCKETIO = SocketIO(app)
 
 logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(NAME)
 
 
-@APP.route("/twilio", methods=["POST"])
+@app.route("/twilio", methods=["POST"])
 def entry_point():
     if "From" in request.form and "Body" in request.form:
         LOGGER.info(f"NEW MESSAGE {request.form['From']}: {request.form['Body']}")
@@ -31,7 +31,7 @@ def entry_point():
     return str(MessagingResponse())
 
 
-@APP.route("/status", methods=["POST"])
+@app.route("/status", methods=["POST"])
 def update_status():
     if "To" in request.form and "MessageStatus" in request.form:
         LOGGER.info(
@@ -46,10 +46,10 @@ def update_status():
     return str(MessagingResponse())
 
 
-@APP.route("/", methods=["GET"])
+@app.route("/", methods=["GET"])
 def admin_page():
     return render_template("admin.html")
 
 
 if __name__ == "__main__":
-    SOCKETIO.run(APP, debug=True)
+    SOCKETIO.run(app, debug=True)
