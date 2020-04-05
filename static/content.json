@@ -11,6 +11,11 @@
             "text": "Aprender a me prevenir contra o coronavírus."
         },
         {
+            "option": "3",
+            "module": "modules.features.news.News",
+            "text": "Saber as últimas notícias sobre o coronavírus."
+        },
+        {
             "option": "5",
             "module": "modules.features.anxiety.Anxiety",
             "text": "Aliviar a minha ansiedade."
@@ -138,6 +143,18 @@
                 }
             ],
             "source": "_Fonte: https://www.frasesdobem.com.br_",
+            "exit": "_Para voltar ao início, digite 0._"
+        },
+        "News": {
+            "feeds": [
+                "https://theintercept.com/feed/?lang=pt",
+                "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+                "https://brasil.elpais.com/rss/brasil/portada_completo.xml",
+                "http://g1.globo.com/dynamo/brasil/rss2.xml",
+                "http://feeds.bbci.co.uk/portuguese/rss.xml",
+                "http://rss.home.uol.com.br/index.xml"
+            ],
+            "not_found": "Não foram encontradas notícias sobre o coronavírus.",
             "exit": "_Para voltar ao início, digite 0._"
         }
     }
