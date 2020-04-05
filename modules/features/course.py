@@ -36,9 +36,7 @@ class Course(Module):
             else:
                 session[self._current_module_key] = "module_2"
 
-            self._enqueue_session(
-                session[self._current_module_key], session[self._current_session_key]
-            )
+            self._enqueue_session()
             return
 
         current_session = int(session.get(self._current_session_key))
@@ -57,12 +55,12 @@ class Course(Module):
 
         session[self._current_session_key] = current_session
         session[self._current_module_key] = current_module
-        self._enqueue_session(
-            session[self._current_module_key], session[self._current_session_key]
-        )
+        self._enqueue_session()
 
-    def _enqueue_session(self, module, session):
-        for content in self._content[module][session]:
+    def _enqueue_session(self):
+        m = session[self._current_module_key]
+        s = int(session[self._current_session_key])
+        for content in self._content[m][s]:
             self._enqueue_generic(content)
 
     def _welcome(self):
