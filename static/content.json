@@ -14,6 +14,11 @@
             "option": "5",
             "module": "modules.features.anxiety.Anxiety",
             "text": "Aliviar a minha ansiedade."
+        },
+        {
+            "option": "6",
+            "module": "modules.features.message.Message",
+            "text": "Quero ler uma mensagem para me animar."
         }
     ],
     "modules": {
@@ -75,6 +80,64 @@
                 "Se precisar conversar com um profissional de saúde mental sobre sua ansiedade recomendamos o: relacoessimplificadas.com.br/escuta",
                 "Para ouvir histórias ou indicar amigos e familiares basta acessar a página do Histórias por Telefone e preencher o formulário: https://bit.ly/formulario-historias"
             ],
+            "exit": "_Para voltar ao início, digite 0._"
+        },
+        "Message": {
+            "messages": [
+                {
+                    "text": "Calma, o mundo ainda tem muita volta pra dar.",
+                    "image": "1.jpeg"
+                },
+                {
+                    "text": "As noites mais escuras produzem as estrelas mais brilhantes.",
+                    "image": "2.jpeg"
+                },
+                {
+                    "text": "Dificuldades preparam pessoas comuns para destinos extraordinários. (C.S.Lewis)",
+                    "image": "3.jpeg"
+                },
+                {
+                    "text": "Grandes batalhas só são dadas a grandes guerreiros.",
+                    "image": "4.jpeg"
+                },
+                {
+                    "text": "Chega um tempo na vida que a gente aprende que ninguém nos decepciona, nós que colocamos expectativa demais sobre as pessoas. Cada um é o que é e oferece aquilo que tem para oferecer.",
+                    "image": "5.jpeg"
+                },
+                {
+                    "text": "Não importa a cor do céu. Quem faz o dia bonito é você.",
+                    "image": "6.jpeg"
+                },
+                {
+                    "text": "Novas portas se abrem. Novos dias aparecem, velhos sonhos realizam-se.",
+                    "image": "7.jpeg"
+                },
+                {
+                    "text": "Mantenha o foco no objetivo, centralize a força para lutar e utilize a fé para vencer.",
+                    "image": "8.jpeg"
+                },
+                {
+                    "text": "Se não puder fazer tudo, faça tudo que puder.",
+                    "image": "9.jpeg"
+                },
+                {
+                    "text": "Sem sonhos, a vida não tem brilho. Sem metas, os sonhos não têm alicerces. Sem prioridades, os sonhos não se tornam reais. Sonhe, trace metas, estabeleça prioridades e corra riscos para executar seus sonhos. Melhor é errar por tentar do que errar por omitir. (Augusto Cury)",
+                    "image": "10.jpeg"
+                },
+                {
+                    "text": "Superar não é escolha, é necessidade.",
+                    "image": "11.jpeg"
+                },
+                {
+                    "text": "Para os dias bons: sorrisos. Para os dias ruins: paciência. Para todos os dias: fé.",
+                    "image": "12.jpeg"
+                },
+                {
+                    "text": "Você é mais forte do que imagina. Acredite.",
+                    "image": "13.jpeg"
+                }
+            ],
+            "source": "_Fonte: https://www.frasesdobem.com.br_",
             "exit": "_Para voltar ao início, digite 0._"
         }
     }
