@@ -29,6 +29,11 @@
             "option": "6",
             "module": "modules.features.message.Message",
             "text": "Quero ler uma mensagem para me animar."
+        },
+        {
+            "option": "7",
+            "module": "modules.features.course.Course",
+            "text": "Ocupar meu tempo aprendendo alguma coisa."
         }
     ],
     "modules": {
@@ -55,14 +60,14 @@
         "Prevention": {
             "contents": [
                 "- Lave suas mãos (sabão com água ou álcool em gel podem matar o vírus).",
-                "Para saber mais: Vídeo com o Dr. Dráuzio Varella 'Como lavar as mãos corretamente'. https://www.youtube.com/watch?v=rsQlyIwetsE",
+                "Para saber mais: Vídeo com o Dr. Dráuzio Varella \"Como lavar as mãos corretamente\". https://www.youtube.com/watch?v=rsQlyIwetsE",
                 "- Se for tossir ou espirrar, cubra a boca com um lenço de papel ou o cotovelo para evitar que o vírus se propague. E, claro: lave as mãos depois!",
                 "Que tal usar uma máscara toda vez que for sair? Reduz muito a chance de você pegar ou transmitir coronavírus! Você pode fazer sua própria máscara em casa.",
                 "https://www1.folha.uol.com.br/equilibrioesaude/2020/04/veja-como-fazer-sua-propria-mascara-de-pano-para-se-proteger-do-coronavirus.shtml",
                 "- Se você tocar em uma superfície contaminada pelo vírus, você pode adoecer! Então não passe a mão nos olhos, nariz e boca.",
                 "- Não fique próximo à pessoas que estiverem tossindo, espirrando ou febris.",
                 "- E, claro: Quarentene-se! Aproveite para aprender pela internet, para assistir filmes, relaxar, fazer exercícios físicos e pensar em novas maneiras de ganhar dinheiro assim que essa crise passar! Vamos juntos na luta contra o coronavírus!",
-                "Importante: não existe tratamento, vacina ou medicamento específico para tratar ou prevenir o coronavírus. As substâncias, mesmo as que estão sendo utilizadas em casos de vida ou morte, ainda estão em testes, não há certeza. Não 'pegue' para ver!",
+                "Importante: não existe tratamento, vacina ou medicamento específico para tratar ou prevenir o coronavírus. As substâncias, mesmo as que estão sendo utilizadas em casos de vida ou morte, ainda estão em testes, não há certeza. Não \"pegue\" para ver!",
                 "Além de tudo isso, o coronavírus é uma doença nova, de modo que não sabemos as sequelas que podem aparecer com o tempo para quem passou por essa terrível experiência. Vamos nos prevenir!"
             ],
             "images": [
@@ -170,6 +175,166 @@
             ],
             "not_found": "Não foram encontradas notícias falsas sobre o coronavírus.",
             "exit": "_Para voltar ao início, digite 0._"
+        },
+        "Course": {
+            "welcome": [
+                "*MINI-CURSO: RECEITAS CASEIRAS CONTRA A GRIPE E A FAVOR DA IMUNIDADE*",
+                "Opa! Que bom que você quer gastar seu tempo com algo tão precioso quando aprender!",
+                "Você também pode ouvir esse texto aqui:",
+                "AUDIO.MP3_",
+                "Olá, geeeente desse meu Brasil Varonil, como vocês estão? Eu estou aqui na minha quarentena com meu chazinho na mão me perguntando quando esse coronavírus vai embora do planeta! Bem, enquanto ele não vai, a gente vai respirar fundo e cuidar uns dos outros, não é mesmo?",
+                "Você já deve saber a diferença entre o coronavírus e a gripe, mas vamos repetir:\nOs sintomas do coronavírus são: Tosse seca, febre, cansaço e, nos casos mais graves, dificuldade em respirar. Parece gripe, mas não é!",
+                "Os sintomas de gripe comum começam a ser sentidos cerca de 2 à 3 dias após estar em contato com alguém gripado ou se expor à, por exemplo, o frio. O coronavírus, você se expõem ao vírus, ele se incuba e leva até duas semanas para o sintoma aparecer.\nNormalmente a pessoa com gripe tem tosse, espirros e nariz escorrendo; Dor de garganta; Dores musculares, aquela dor no corpo chata!, especialmente nas costas e pernas; Perda de apetite e cansaço; Calafrios; Dor de cabeça e, se agripe for braba, Febre entre 38 e 40ºC.\nNormalmente, esses sintomas aparecem de forma repentina e costumam durar de 2 à 7 dias. Em geral, a febre dura cerca de 3 dias, enquanto os outros sintomas desaparecem 3 dias depois da febre baixar.",
+                "A gripe é uma doença comum causada pelo vírus Influenza, que pode ser muito desconfortável e interferir no dia-a-dia, mas nada como um coronavírus que a gente ainda não sabe o suficiente para uma prevenção adequada, não temos medicação comprovada que auxilie no tratamento. Por isso as pesquisas são importantes. Força aos profissionais da saúde e aos pesquisadores!\nO tratamento para a gripe pode ser feito com o uso de remédios indicados pelo médico e com vacinas anti-gripe também. Mas como estamos em tempo de pandemia e de quarentena, é bom reservar o atendimento médico para pessoas mais necessitadas. Vou dar nesse primeiro módulo, dicas para aliviar os sintomas mais rapidamente. No segundo módulo, vamos ver receitas de remédios caseiros para melhorar a gripe e o melhor, não tem contra indicação: são chás e sucos gostosos que você pode tomar para melhorar a sua imunidade! Vamos começar?"
+            ],
+            "menu": "1 - Módulo I\n2 - Módulo II\nVoltar ao menu inicial 0\n\nDIGITE APENAS O NÚMERO",
+            "continue": "1 - Continuar\n0 - Voltar ao menu inicial\n\nDIGITE APENAS O NÚMERO",
+            "exit": "_Para voltar ao início, digite 0._",
+            "module_1": {
+                "content": [
+                    [
+                        "*MÓDULO I - COMO ALIVIAR OS SINTOMAS DA GRIPE?*",
+                        "Para se curar de uma gripe forte, é importante descansar, tomar remédios para aliviar a dor e a febre, como o paracetamol e o ibuprofeno, por exemplo, aliviar outros sintomas que possam surgir e reforçar o sistema imunológico. Ligue para a farmácia e converse com o farmacêutico antes de pedir a entrega!",
+                        "Você também pode ouvir esse texto aqui:",
+                        "AUDIO.MP3_"
+                    ],
+                    [
+                        "*1. NARIZ ENTUPIDO E ESCORRENDO*",
+                        "Para melhorar a respiração, pode-se utilizar a inalação de vapor de água fervente ou a nebulização com soro fisiológico, caso você tenha um nebulizador",
+                        "Além disso, também se pode usar um descongestionante nasal, com oximetazolina, por exemplo, mas não se devem exceder os cinco dias de utilização, já que utilizações prolongadas podem causar um efeito negativo.",
+                        "Fazer lavagem nasal com soro, ajuda na eliminação de secreção do nariz, evitando dor de cabeça e o desenvolvimento de sinusite.",
+                        "Outra coisa que auxilia é aumentar a umidade do local em que se está, como no quarto, por exemplo, ajuda a diminuir a tosse e o ressecamento do nariz. Para isso, basta deixar um balde com água no cômodo ou, se você tiver em casa, usar um umidificador"
+                    ],
+                    [
+                        "*2. TOSSE*",
+                        "Para melhorar a tosse, beba bastante água e use remédios caseiros que acalmem a garganta, como mel com limão. A gente vai falar sobre eles no próximo Módulo",
+                        "Além disso, também se pode usar um xarope, que pode ser comprado em farmácias, para aliviar a tosse e a eliminar a expectoração. Ligue para a farmácia e converse com o farmacêutico, antes de pedir a entrega!",
+                        "Você pode ainda fazer gargarejos com água e sal. Os gargarejos com água e sal ajudam a diminuir o desconforto e inflamação da garganta que podem acontecer na gripe, além de serem eficazes na remoção de secreções ali presentes."
+                    ],
+                    [
+                        "*3. FEBRE*",
+                        "Para baixar a febre, você pode tomar medicamentos antitérmicos, como o paracetamol ou o ibuprofeno, por exemplo. Pode tomar um banho levemente frio e colocar panos úmidos na testa e nas axilas, para ajudar a regular a temperatura do corpo.",
+                        "Beber muitos líquidos também é importante. Os líquidos, especialmente a água, são ainda mais importantes se a gripe causar febre, uma vez que poderá ocorrer desidratação. Além do mais, os líquidos, como sucos de fruta, chás, vitaminas e sopas, podem proporcionar os nutrientes necessários quando a pessoa não consegue comer."
+                    ],
+                    [
+                        "4. DOR DE CABEÇA E NOS MÚSCULOS",
+                        "Algumas dicas que podem contribuir para aliviar a dor de cabeça é o descanso, a ingestão de um chá, que pode ser de camomila, por exemplo, e colocar um pano úmido na testa. Caso a dor seja forte, pode-se tomar um paracetamol ou ibuprofeno, por exemplo.",
+                        "Se você tiver em casa, pode usar bolsa de água quente. Elas também são vendidas em farmácia. São ótimas para aliviar as dores musculares.",
+                        "Ficar em repouso é essencial para diminuir os sintomas da gripe e do resfriado, pois permite que o corpo use toda a sua energia para combater a doença. Fazer qualquer atividade física quando se está doente diminui as defesas do corpo, aumenta o risco de exposição a outros agentes infecciosos e retarda a cura. Fique em casa, fique em repouso! Quarentene-se!",
+                        "Observação: A gripe em grávidas, crianças e idosos pode causar sintomas mais fortes, podendo ocorrer também vômitos e diarréia, pois esses grupos têm o sistema imune mais fraco, o que deixa o organismo mais sensível. Então tenha cuidado e se previna com as receitas do segundo Módulo para não deixar a gripe chegar perto!",
+                        "Parabéns! Você terminou o Módulo I"
+                    ]
+                ]
+            },
+            "module_2": {
+                "content": [
+                    [
+                        "MÓDULO II - REMÉDIOS CASEIROS CONTRA A GRIPE E A FAVOR DA IMUNIDADE",
+                        "Bem vindo ao Módulo II.",
+                        "Os remédios caseiros para gripe não substituem o tratamento recomendado pelo médico, apenas ajudam a melhorar a imunidade e a complementar o tratamento indicado, promovendo a recuperação mais rápida. Em tempos de coronavirus, é muito importante aumentar a imunidade! É recomendado que os chás e sucos para gripe sejam tomados logo após o seu preparo para que não perca nutrientes.",
+                        "Você também pode ouvir esse texto aqui:",
+                        "AUDIO.MP3_"
+                    ],
+                    [
+                        "*PARTE I - OS MAIS TRADICIONAIS*",
+                        "Chá de limão com mel, gengibre ou alho: melhores receitas!",
+                        "O limão é um excelente remédio caseiro para desintoxicar o organismo porque é rico em potássio, clorofila e ajuda a eliminar as toxinas do organismo, diminuindo a fadiga e melhorando a disposição no dia-a-dia. Você pode, todo dia em jejum, tomar o suco de meio limão. É amargo, mas a gripe e o corona são mais!\nAlém disso, o limão também ajuda a tratar a prisão de ventre, emagrecer, melhorar a aparência da pele, protege os órgãos de doenças degenerativas e infecções, acelera a cicatrização e previne o envelhecimento precoce. Olha como a natureza é mágica!",
+                        "Vamos às receitas?",
+                        "Você também pode ouvir esse texto aqui:",
+                        "AUDIO.MP3_"
+                    ],
+                    [
+                        "*1) A primeira receita é - CHÁ DE LIMÃO COM MEL*",
+                        "Descongestionam o nariz e a garganta e melhoram a respiração.",
+                        "*Você vai precisar de:*\n- Suco de 1 limão.\n- 2 colheres de sopa de mel.\n- 1 xícara de água fervente.",
+                        "*Modo de preparo*\nDeve-se adicionar o mel à xícara de água fervente, mexer bem até se tornar uma mistura toda igual e depois, acrescentar o suco puro de 1 limão. Depois de preparado, deve tomar o chá logo, em seguida do seu preparo. É importante só acrescentar o suco de limão por último para garantir que a vitamina C presente na fruta não se perca",
+                        "Você pode assistir esse vídeo de Remédio Caseiro para Gripe: https://www.youtube.com/watch?v=pa_s9mft8hM"
+                    ],
+                    [
+                        "*2) CHÁ DE LIMÃO, GENGIBRE E MEL*",
+                        "E se agente colocar mais um elemento? Bem vindo, gengibre! O chá de limão com gengibre ajuda também a aliviar a congestão nasal, a dor de garganta e os arrepios. Além disso, é ótimo para melhorar a digestão e o enjoo.",
+                        "*Você vai precisar de:*\n- 3 colheres de chá de raiz de gengibre fresca ralada.\n- 500 mL de água.\n- 2 colheres de sopa de suco de limão.\n- 1 colher de sopa de mel.",
+                        "*Modo de preparo*\nFerver o gengibre em uma panela tapada durante cerca de 10 minutos e, de seguida, retirar do lume, coar e juntar o suco de limão e o mel. Pode-se beber várias vezes ao dia."
+                    ],
+                    [
+                        "*3) CHÁ COM CASCA DE LIMÃO*",
+                        "Este chá contém os óleos essenciais do limão que tem efeito purificante, além de ser delicioso para tomar depois de uma refeição, por exemplo.",
+                        "*Você vai precisar de:*\n- Meio copo de água.\n- Casca de 1 limão.",
+                        "*Modo de preparo*\nFerver a água e depois adicionar a casca do limão, que deve ser cortada bem fina, de forma a eliminar por completo a parte branca. Tampar durante alguns minutos e tomar a seguir, ainda morno, sem adoçar."
+                    ],
+                    [
+                        "*4) SUCO DE LARANJA COM LIMÃO E PRÓPOLIS*",
+                        "Esse suco é rico em vitamina C, ajudando a estimular a imunidade. Para fazer o suco, basta espremer 2 laranjas + 1 limão e adoçar com mel, por fim adicionar 2 gotas de extrato de própolis."
+                    ],
+                    [
+                        "*5) CHÁ DE ALHO*",
+                        "O alho é excelente remédio para todos os tipos de infecções, principalmente as do aparelho respiratório. O alho também combate a proliferação de bactérias e vírus. Eficaz contra o resfriado, a gripe, as infecções de ouvido, o alho ajuda também a reduzir o muco. Pode ser consumido junto com antibióticos, para dar suporte às suas ações, e é especialmente indicado em caso de tosse persistente e bronquite. Além disso, contém vitaminas A, C e E, que reforçam o sistema imunológico.\nNo time contra a gripe é certeza a presença do alho!",
+                        "*Você vai precisar de:*\n- 3 dentes de alho.\n- 1 colher de mel.\n- 1/2 limão.\n- 1 xícara de água.",
+                        "*Modo de preparo*\nAmassar os dentes de alho e adicionar numa panela juntamente com a água e deixar ferver por cerca de 5 minutos. Depois acrescentar meio limão espremido e o mel, e tomar a seguir, ainda morno.\nAlém de tomar o chá, também é necessário fazer uma alimentação adequada para tratar os sintomas de gripe o mais rapidamente possível. Veja o que deve comer no vídeo:\nTem mel, não é tão ruim assim, vai? :)\nA gente fala mel porque o mel também combate a gripe e indica açucar mascavo porque é melhor do que o processado, mas não é todo mundo que tem mel ou açucar mascavo em casa. Se não tiver mel ou açucar mascavo, tudo bem, use açucar branco à gosto, ok?"
+                    ],
+                    [
+                        "6) Um é bom, dois é melhor: CHÁ DE LIMÃO COM ALHO!",
+                        "O limão e o alho, em conjunto, são uma ótima opção natural para a gripe, porque além das propriedades do limão, devido à presença do alho e do gengibre, este suco tem ação antibacteriana e anti-inflamatória, ajudando também na melhoria da circulação sanguínea e diminuição de dores de cabeça.",
+                        "*Você vai precisar de:*\n- 3 dentes de alho.\n- 1 colher de mel.\n- Meio limão.\n- 1 xícara de água.",
+                        "*Modo de preparo*\nAmassar os dentes de alho e adicionar numa panela juntamente com a água e deixar ferver por cerca de 5 minutos. Depois, acrescentar meio limão espremido e o mel, e tomar a seguir, ainda morno.",
+                        "A cebola também é ótima para adicionar aos chás. E não me venha falar do bafo: pegar coronavírus ou gripe é muito pior! Fique em casa, fique imunizado!",
+                        "*Parabéns! Você terminou a Parte I do Módulo II.*"
+                    ],
+                    [
+                        "*PARTE II - OUTRAS PREVENÇÕES CASEIRAS*",
+                        "Bem-vindo à Parte II do Módulo II! Você está quase lá!",
+                        "Está se sentindo na era do rádio com todos esses áudios? Eu estou me sentindo uma radialista! Daqui a pouco começo a contar a história de amor entre o alho e o limão. Quero dizer, acho que já contei, né? Então... pronto para mais receitas?",
+                        "Você também pode ouvir esse texto aqui:",
+                        "AUDIO.MP3_"
+                    ],
+                    [
+                        "*1) BEBIDA QUENTE COM LEITE E GUACO*",
+                        "Esta é também uma boa opção para cuidar da gripe e do resfriado, principalmente para quem não gosta de chá, pois contém propriedades broncodilatadoras e expectorantes que ajudam a aliviar os sintomas. Caso não tenha a planta por perto, você pode encontrar folhas de guaco desidratadas na sessão de temperos ou de remédios naturais do supermercado, farmácia ou em lojas especializadas em ervas.",
+                        "Você vai precisar de:\n- 2 colheres (de sopa) de açúcar mascavo.\n- 5 folhas de guaco.\n- 1 xícara de leite de vaca ou de leite de arroz.",
+                        "*Modo de preparo*\nColoque o leite e o açúcar mascavo em uma panela em fogo branco até que o leite fique dourado. Depois acrescente as folhas de guaco e deixe ferver. De seguida, deixe esfriar, retire as folhas de guaco e beba a mistura ainda morna."
+                    ],
+                    [
+                        "*2) BEBIDA QUENTE COM GENGIBRE E ANIS*",
+                        "Este receita caseira deve melhorar a sensação de mal estar relativa aos estados gripais.",
+                        "*Você vai precisar de:*\n- 300 mL de leite.\n- 4 rodelas finas de raiz de gengibre.\n- 1 colher de chá de anis estrelado.\n- 1 pau de canela.",
+                        "*Modo de preparo*\nColocar todos os ingredientes numa panela e levar para ferver por alguns minutos, após o leite começar a borbulhar, esperar no fogo mais 2 minutos. Adoçar com mel e beber morno antes de dormir."
+                    ],
+                    [
+                        "*3) SUCO DE MAÇÃ E KIWI*",
+                        "Este suco possui propriedade antioxidante, vitamina C e minerais que ajudam a fortalecer o sistema imune, prevenindo e tratando o resfriado.",
+                        "*Você vai precisar de:*\n- 6 kiwis.\n- 3 maçãs.\n- 2 copos de água.",
+                        "*Modo de preparo*\nDescascar as frutas, cortar em pedaços e depois passar na centrífuga ou no liquidificador. Diluir o suco concentrado das frutas na água e beber 2 copos por dia, até que os sintomas diminuam."
+                    ],
+                    [
+                        "*4) SUCO DE MAÇA, LIMÃO E CENOURA*",
+                        "O suco de maçã, com limão e cenoura é rico em vitamina C e minerais que aumentam as defesas do organismo contra o resfriado, assim como contra infecções.",
+                        "*Você vai precisar de:*\n- 1 maçã.\n- Suco de 1 limão.\n- 1 cenoura.\n- 2 copos de água.",
+                        "*Modo de preparo*\nColocar os ingredientes no liquidificador, bater até obter uma mistura homogênea e beber 3 vezes por dia."
+                    ],
+                    [
+                        "*5) SUCO DE MAÇÃ COM MEL*",
+                        "Maça é bom com tudo. Com beterraba, com couve... já esperimentaram? E até pura!",
+                        "Esse suco é um ótimo expectorante, ajudando a eliminar as secreções que são comuns de serem produzidas e acumuladas durante a gripe. Para isso, é preciso colocar e misturar no liquidificador:\n2 maçãs, 1 copo de água e 1/2 limão.\nDepois coar, adoçar com mel e beber."
+                    ],
+                    [
+                        "*6) SUCO DE ACEROLA*",
+                        "Para você que tem aquele pé de acerola no quintal e que, de quando em quando, ele fica carregadinho... não desperdice. Congele se for preciso, mas não deixe uma frutinha que seja, estragar. Assim como a laranja e o limão, a acerola é rica em vitamina C, o que estimula o bom funcionamento das células de defesa do corpo. Para fazer o suco de acerola é preciso colocar no liquidificador 1 copo de acerolas com água e bater bem. Em seguida, coar, adoçar com mel e beber logo depois."
+                    ],
+                    [
+                        "*7) SUCO DE CAJU*",
+                        "O caju também é uma fruta rica em vitamina C, sendo também considerada uma ótima opção para combater a gripe. Para fazer o suco basta colocar no liquidificador 7 cajus com 2 copos de água e adoçar com mel.",
+                        "As quantidades de nenhuma erceita não são exatas, tá? Se você tiver três cajus, pode tomar suco também! O negócio é se imunizar! Todos contra a gripe (e o coronavírus)."
+                    ],
+                    [
+                        "8) Chegou a hora de descansar os pezinhos com o *ESCALDA-PÉS COM HORTELÃ-PIMENTA E EUCALIPTO*",
+                        "O escalda-pés é uma ótima forma de completar o chá ou a bebida quente, pois ajuda a aliviar o mal-estar geral causado pelo resfriado e, ao inalar o vapor de água do escalda-pés, é possível hidrata a garganta, reduzindo a tosse.",
+                        "*Você vai precisar de:*\n- 1 litro de água fervente.\n- 4 gotas do óleo essencial de hortelã-pimenta.\n- 4 gotas do óleo essencial de eucalipto.",
+                        "*Modo de preparo*\nAdicione as gotas de hortelã-pimenta e de eucalipto na água. Deixe esfriar e quando a água estiver morna mergulhe os pés, deixando-os de molho por cerca de vinte minutos. Acrescente água quente à medida que a água vai esfriando.",
+                        "Parabéns! Você terminou o mini-curso \"Receitas caseiras contra a gripe e a favor da imunidade\"!",
+                        "Fonte: https://www.tuasaude.com e equipe do Quarentene-se!"
+                    ]
+                ]
+            }
         }
     }
 }
