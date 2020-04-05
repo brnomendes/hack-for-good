@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Quarentena-se</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"
+        integrity="sha256-Dul4c09cdrWKXVtallPxF558lwxMwCC8dXJdZ0PVW54=" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", event => {
+            var socket = io.connect('http://' + document.domain + ':' + location.port);
+            socket.on('twilio', message => {
+                document.getElementById('log').innerHTML += `<p>${message.as_send ? 'To' : 'From'} <strong>${message.number}</strong>: ${message.content}</p>`;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="log"></div>
+
+</body>
+
+</html>

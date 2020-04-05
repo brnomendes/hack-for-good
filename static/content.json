@@ -1,0 +1,31 @@
+{
+    "menu": [
+        {
+            "option": "1",
+            "module": "modules.features.symptoms.Symptoms",
+            "text": "Saber os sintomas do coronavírus."
+        }
+    ],
+    "modules": {
+        "Welcome": {
+            "welcome_message": "Oi! Tudo bem?\nEstá tudo muito complicado com esse coronavírus, não é? Aqui no WhatsApp, vamos tentar descomplicar ao máximo para você! Você vai poder ter mais informações, saber se aquela notícia que te encaminharam é verdadeira ou falsa e passar o tempo enquanto se mantém em casa seguro.\n\nSe você não quiser mais constar nesse cadastro, envie a palavra SAIR.\n\nO que você gostaria de fazer agora?",
+            "ask_again": "Esse é um sistema que responde apenas aos números do menu.\n\nO que você gostaria de fazer agora?",
+            "how_to_response": "_DIGITE APENAS O NÚMERO._"
+        },
+        "Command": {
+            "exit": {
+                "text": "SAIR",
+                "response": "Você não consta mais no sistema."
+            }
+        },
+        "Symptoms": {
+            "introduction": "Os sintomas do coronavírus são: Tosse seca, febre, cansaço e, nos casos mais graves, dificuldade de respirar. Parece gripe, mas não é!",
+            "image": "differences.jpg",
+            "contents": [
+                "No início da doença, é possível estar com o coronavírus sem sentir nenhum sintoma, mas ainda assim, estar transmitindo sem saber! Inclusive transmitindo a doença para pessoas vulneráveis como idosos, diabéticos, pessoas com problemas respiratórios e de coração. Pessoas nessas condições tem grandes riscos de ir à óbito. Proteja a si mesmo e aos que você ama: previna-se! Quarentene-se!",
+                "Se você, ou alguém próximo, apresentar sintomas leves, fique em casa! Mantenha o corpo aquecido, beba bastante água, use umidificador de ar e banho quente para a tosse. Se tiver febre ou dificuldade para respirar se dirija para o hospital mais próximo. Força! Vai dar tudo certo!"
+            ],
+            "exit": "_Para voltar ao início, digite 0._"
+        }
+    }
+}
