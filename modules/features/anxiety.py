@@ -14,10 +14,6 @@ class Anxiety(Module):
                 self._enqueue_response(content)
 
             self._enqueue_response_media(
-                self._get_static_file(self._content["image"], self.NAME)
-            )
-
-            self._enqueue_response_media(
                 self._get_static_file(self._content["video"], self.NAME)
             )
 
