@@ -5,7 +5,6 @@ import random
 
 from flask import session
 import feedparser
-import request
 import hashlib
 
 
