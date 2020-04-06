@@ -21,7 +21,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", event => {
-      var socket = io.connect('http://' + document.domain + ':' + location.port);
+      var socket = io.connect();
       socket.on('twilio', message => {
         let content = `<div class="item"><div class="content"><div class="header">${message.as_send ? 'Para' : 'De'} ${message.number}</div>${message.content}</div></div>`
         document.getElementById('log').innerHTML += content;
